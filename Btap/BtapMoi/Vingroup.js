@@ -14,7 +14,7 @@ const Vingroup = () => {
   const [title, setTitle] = useState("");
   const [percent, setPercent] = useState("");
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   // const apiKey = '2NG5K5CMQA8II6EV';
   // const symbol = 'IBM'; 
@@ -48,8 +48,9 @@ const Vingroup = () => {
     }
   }
   useEffect(() => {
-    getData();
-  })
+    //setLoading(true);
+    //getData();
+  }, [])
 
   return (
     <View style={styles.container}>
@@ -97,7 +98,7 @@ const styles = StyleSheet.create({
   },
   buttonView: {
     height: "50%",
-    alignSelf: 'center',
+    backgroundColor:'pink',
   },
   buttonR: {
     margin: 10,

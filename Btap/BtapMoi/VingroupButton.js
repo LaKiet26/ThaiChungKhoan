@@ -5,8 +5,7 @@ import { TouchableOpacity } from 'react-native'
 const VingroupButton = (props) => {
   return (
     <TouchableOpacity style={styles.button}>
-        <Text 
-          style={{color:'white', fontWeight:'bold'}}
+        <Text style={{fontSize: 18}}
           onPress={props.onPress}
         >{props.TenButton}</Text>
     </TouchableOpacity>
@@ -17,8 +16,8 @@ export default VingroupButton
 
 const styles = StyleSheet.create({
     button: {
-        backgroundColor: 'gray',
-        width: 100,
+        backgroundColor: '#BDBDBD',
+        width: 110,
         height: 40,
         borderRadius: 10,
         borderWidth: 1,
